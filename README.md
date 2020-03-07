@@ -1,0 +1,2 @@
+# rssol
+Rust solitaire library
