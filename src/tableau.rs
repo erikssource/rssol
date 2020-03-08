@@ -15,9 +15,9 @@ impl Tableau {
 
   pub fn display(&self) -> String {
     let rows = self.max_rows();
-    let mut display = "||__1__||__2__||__3__||__4__||__5__||__6__||__7__||".to_owned();
+    let mut display = "||__1__||__2__||__3__||__4__||__5__||__6__||__7__||\n".to_owned();
     for row in 0..rows {
-      display.push_str(&format!("  {}  {}  {}  {}  {}  {}  {}  ",
+      display.push_str(&format!("  {}  {}  {}  {}  {}  {}  {}  \n",
         self.piles[0].display_row(row),
         self.piles[1].display_row(row),
         self.piles[2].display_row(row),

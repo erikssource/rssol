@@ -160,6 +160,9 @@ impl Game {
           break;
         }
       }
+      else {
+        break;
+      }
     }
     Ok(self.success())
   }
@@ -231,10 +234,10 @@ impl Game {
   }
 
   pub fn display(&self) -> String {
-    let mut display = "-----------------------------------------------------".to_owned();
-    display.push_str(&format!("Turn: {}   Stock: {}   Waste: {}", self.turn, self.stock.size(), self.waste.size()));
-    display.push_str("    n      k            h      d      s      c");
-    display.push_str(&format!("  {}  {}        {}  {}  {}  {}\n",
+    let mut display = "-----------------------------------------------------\n".to_owned();
+    display.push_str(&format!("Turn: {}   Stock: {}   Waste: {}\n", self.turn, self.stock.size(), self.waste.size()));
+    display.push_str("    n      k            h      d      s      c\n");
+    display.push_str(&format!("  {}  {}        {}  {}  {}  {}\n\n",
       self.stock,
       self.waste,
       self.foundations[HEART_FD as usize],

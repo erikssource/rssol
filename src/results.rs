@@ -1,5 +1,8 @@
 
 pub enum Success {
+    Quit,
+    Retire,
+    Help(String),
     Victory(String),
     ValidMove(String),
 }
