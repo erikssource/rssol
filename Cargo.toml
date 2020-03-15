@@ -9,5 +9,4 @@ edition = "2018"
 [dependencies]
 arr_macro = "0.1"
 hamcrest2 = "*"
-rand = "0.7"
-
+rand = {version = "0.7", features = ["wasm-bindgen"]}
